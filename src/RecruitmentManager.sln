@@ -5,13 +5,15 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "RecruitmentManager\API.csproj", "{C9E9DF4C-6808-4513-9E79-6DE125E8BFB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{A94FC4C6-33D6-4C2C-874D-362D26E091E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{A94FC4C6-33D6-4C2C-874D-362D26E091E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfraStructure", "InfraStructure\InfraStructure.csproj", "{EA7C5E50-64A8-4876-A224-B955C5AE2EAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfraStructure", "InfraStructure\InfraStructure.csproj", "{EA7C5E50-64A8-4876-A224-B955C5AE2EAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{F565DAC5-F0C7-4A59-8383-A93D3BD57396}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{F565DAC5-F0C7-4A59-8383-A93D3BD57396}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoC", "IoC\IoC.csproj", "{488C8FDC-4F70-4253-8C6C-C042320119F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoC", "IoC\IoC.csproj", "{488C8FDC-4F70-4253-8C6C-C042320119F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{83AB7F35-08BE-4EFB-8B5D-20041DBFD103}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{488C8FDC-4F70-4253-8C6C-C042320119F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{488C8FDC-4F70-4253-8C6C-C042320119F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{488C8FDC-4F70-4253-8C6C-C042320119F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83AB7F35-08BE-4EFB-8B5D-20041DBFD103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83AB7F35-08BE-4EFB-8B5D-20041DBFD103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83AB7F35-08BE-4EFB-8B5D-20041DBFD103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83AB7F35-08BE-4EFB-8B5D-20041DBFD103}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

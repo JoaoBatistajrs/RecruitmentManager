@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace InfraStructure.Context;
 
-public class Context : DbContext
+public class RecruitmentContext : DbContext, IDisposable
 {
-    public Context(DbContextOptions<Context> options) : base(options)
+    public RecruitmentContext(DbContextOptions<RecruitmentContext> options) : base(options)
     {
     }
     public DbSet<Seniority> Seniorities { get; set; }   
