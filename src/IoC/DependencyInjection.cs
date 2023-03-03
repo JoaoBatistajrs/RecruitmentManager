@@ -1,4 +1,5 @@
-﻿using Application.Services.Interfaces;
+﻿using Application.Mapper;
+using Application.Services.Interfaces;
 using Application.Services.Service;
 using Domain.Interfaces.Repositories;
 using InfraStructure.Context;
@@ -13,14 +14,15 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddInfraStrucuture(this IServiceCollection services, IConfiguration configuration)
     {
-        services.AddDbContext<RecruitmentContext>(options => options.UseSqlServer(configuration.GetConnectionString("")));
+        services.AddDbContext<RecruitmentContext>(options => options.UseSqlServer(configuration.GetConnectionString("RecruitmentConnectionStrings")));
         services.AddScoped<ISeniorityRepository, SeniorityRepository>();
 
         return services;
     }
     public static IServiceCollection AddServices(this IServiceCollection services, IConfiguration configuration)
     {
-        //services.AddAutoMapper(typeof(DomainToDtoMapping));
+        services.AddAutoMapper(typeof(DomainToDtoMapping));
+        services.AddAutoMapper(typeof(DtoToDomainMapping));
         services.AddScoped<ISeniorityService, SeniorityService>();
 
         return services;
