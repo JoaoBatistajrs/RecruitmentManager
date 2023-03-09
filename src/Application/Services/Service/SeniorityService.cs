@@ -30,7 +30,9 @@ public class SeniorityService : ISeniorityService
 
     public async Task DeleteAsync(int id)
     {
-        await _repository.DeleteAsync(id);
+        var seniorityBd = await _repository.GetByIdAsync(id);
+
+        await _repository.DeleteAsync(seniorityBd);
     }
 
     public async Task<SeniorityDto> GetByIdAsync(int id)

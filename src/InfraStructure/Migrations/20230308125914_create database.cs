@@ -1,13 +1,11 @@
-﻿
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
-
-using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace InfraStructure.Migrations
 {
     /// <inheritdoc />
-    public partial class createdb : Migration
+    public partial class createdatabase : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

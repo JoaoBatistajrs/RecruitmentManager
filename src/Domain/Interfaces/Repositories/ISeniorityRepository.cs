@@ -9,5 +9,5 @@ public interface ISeniorityRepository
     Task<Seniority> GetByIdAsync(int id);
     Task<Seniority> CreateAsync(Seniority seniority);
     Task UpdateAsync(Seniority seniority);
-    Task DeleteAsync(int id);
+    Task DeleteAsync(Seniority seniority);
 }

@@ -23,15 +23,10 @@ namespace InfraStructure.Repositories
             return seniority;
         }
 
-        public async Task DeleteAsync(int id)
+        public async Task DeleteAsync(Seniority seniority)
         {
-            var seniorityBd = GetByIdAsync(id);
-
-            if (seniorityBd != null)
-            {
-                _context.Remove(seniorityBd);
-                await _context.SaveChangesAsync();
-            }
+            _context.Remove(seniority);
+            await _context.SaveChangesAsync();
         }
 
         public async Task<Seniority> GetByIdAsync(int id)
