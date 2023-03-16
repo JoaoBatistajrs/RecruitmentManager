@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace InfraStructure.Repositories
 {
-    public class SeniorityRepository : ISeniorityRepository
+    public class SeniorityRepository : IGenericRepository<Seniority>
     {
         public readonly RecruitmentContext _context;
 

@@ -7,9 +7,9 @@ namespace Tests;
 
 public class SeniorityTests
 {
-    public readonly ISeniorityRepository _repository;
+    public readonly IGenericRepository<Seniority> _repository;
 
-    public SeniorityTests(ISeniorityRepository repository)
+    public SeniorityTests(IGenericRepository<Seniority> repository)
     {
         _repository = repository;
     }

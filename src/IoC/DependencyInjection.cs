@@ -2,6 +2,7 @@
 using Application.Services.Interfaces;
 using Application.Services.Service;
 using Domain.Interfaces.Repositories;
+using Domain.Models;
 using InfraStructure.Context;
 using InfraStructure.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -15,7 +16,8 @@ public static class DependencyInjection
     public static IServiceCollection AddInfraStrucuture(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddDbContext<RecruitmentContext>(options => options.UseSqlServer(configuration.GetConnectionString("RecruitmentConnectionStrings")));
-        services.AddScoped<ISeniorityRepository, SeniorityRepository>();
+        services.AddScoped<IGenericRepository<Seniority>, SeniorityRepository>();
+        services.AddScoped<IGenericRepository<Candidate>, CandidateRepository>();
 
         return services;
     }

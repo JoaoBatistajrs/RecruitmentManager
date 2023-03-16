@@ -8,5 +8,6 @@ public class RecruitmentContext : DbContext, IDisposable
     public RecruitmentContext(DbContextOptions<RecruitmentContext> options) : base(options)
     {
     }
-    public DbSet<Seniority> Seniorities { get; set; }   
+    public DbSet<Seniority> Seniorities { get; set; }
+    public DbSet<Candidate> Candidates { get; set; }
 }

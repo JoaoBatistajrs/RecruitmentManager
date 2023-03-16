@@ -8,10 +8,10 @@ namespace Application.Services.Service;
 
 public class SeniorityService : ISeniorityService
 {
-    private readonly ISeniorityRepository _repository;
+    private readonly IGenericRepository<Seniority> _repository;
     private readonly IMapper _mapper;
 
-    public SeniorityService(ISeniorityRepository repository, IMapper mapper)
+    public SeniorityService(IGenericRepository<Seniority> repository, IMapper mapper)
     {
         _repository = repository;
         _mapper = mapper;
