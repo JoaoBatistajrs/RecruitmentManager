@@ -23,7 +23,7 @@ public class SeniorityController : ControllerBase
 
         await _service.CreateAsync(seniorityDto);
 
-        return Ok();
+        return CreatedAtAction(nameof(GetById), new { id = seniorityDto.Id }, seniorityDto);
     }
 
     [HttpGet]

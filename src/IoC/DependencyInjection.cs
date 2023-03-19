@@ -26,6 +26,7 @@ public static class DependencyInjection
         services.AddAutoMapper(typeof(DomainToDtoMapping));
         services.AddAutoMapper(typeof(DtoToDomainMapping));
         services.AddScoped<ISeniorityService, SeniorityService>();
+        services.AddScoped<ICandidateService, CandidateService>();
 
         return services;
     }
